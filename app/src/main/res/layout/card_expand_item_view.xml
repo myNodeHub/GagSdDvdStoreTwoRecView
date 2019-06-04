@@ -4,7 +4,7 @@
     android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cardViewItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="2dp">
@@ -34,70 +34,6 @@
                 android:text="itemCost"
                 android:textAlignment="center"
                 android:textSize="14sp" />
-            <TextView
-                android:id="@+id/itemBarcode"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="itemBarcode"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/numPage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="numPage"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/progrLangOrIngredient"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="progrLangOrIngredient"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/minAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="minAge"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/genre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="genre"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/diskType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="diskType"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/diskSoft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="diskSoft"
-                android:textAlignment="center"
-                android:textSize="14sp" />
-
         </LinearLayout>
 
     </android.support.v7.widget.CardView>

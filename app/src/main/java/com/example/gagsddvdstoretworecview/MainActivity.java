@@ -48,14 +48,11 @@ public class MainActivity extends AppCompatActivity {
         diskList.add(new Item("MathCad 15", 60, "Barc_6", "DVD", "Soft"));
 //        childListHolder.add(diskList);
 
-
         parentList.add(new Items("Книги", bookList) );  //заполнение листа родительских элементов
         parentList.add(new Items("Диски", diskList) );  //заполнение листа родительских элементов
 
-
-        expandableCategoryRecyclerViewAdapter = //инициализация адаптера типа ExpandableRecyclerViewAdapter
-                new ExpandableRecyclerViewAdapter(getApplicationContext(), //с передачей в параметре листов род. эл.
-                         parentList); //и листа листов доч. эл.
+        //инициализация адаптера типа ExpandableRecyclerViewAdapter с передачей листа в параметре
+        expandableCategoryRecyclerViewAdapter = new ExpandableRecyclerViewAdapter(getApplicationContext(), parentList);
 
         expanderRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext())); //присвоение рец.вью лайоутМэнеджера
 

@@ -19,18 +19,18 @@ public class InnerRecyclerViewAdapter extends RecyclerView.Adapter<InnerRecycler
     public ArrayList<Item> itemList = new ArrayList<Item>();
     Context context;
 
-    public InnerRecyclerViewAdapter(ArrayList<Item> itemList, Context context) { //в конструкторе только лист листов дочерних элементов
+    public InnerRecyclerViewAdapter(ArrayList<Item> itemList, Context context) {
         this.context = context;
         this.itemList = itemList;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder { //Предоставляет прямую ссылку на каждый View-компонент
+    public class ViewHolder extends RecyclerView.ViewHolder {
         TextView itemName;
         TextView itemCost;
 
         CardView cardViewItem;
 
-        public ViewHolder(View itemView) { //конструктор принимает на вход View-компонент, ищет все дочерние компоненты, и возвращает их холдеру
+        public ViewHolder(View itemView) {
             super(itemView);
             itemName = itemView.findViewById(R.id.itemName);
             itemCost = itemView.findViewById(R.id.itemCost);
@@ -40,7 +40,7 @@ public class InnerRecyclerViewAdapter extends RecyclerView.Adapter<InnerRecycler
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) { //создаёт объект ViewHolder, которому передаем на вход View-компонент
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.card_expand_item_view, parent, false);
 
@@ -51,7 +51,7 @@ public class InnerRecyclerViewAdapter extends RecyclerView.Adapter<InnerRecycler
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        holder.itemName.setText("Название: " + itemList.get(position).getItemName()); // связывает холдер с элементом листа листов д.э.
+        holder.itemName.setText("Название: " + itemList.get(position).getItemName());
         holder.itemCost.setText(String.valueOf("Цена: " + itemList.get(position).getItemCost()));
 
         holder.cardViewItem.setOnClickListener(new View.OnClickListener() {

@@ -58,7 +58,6 @@ public class ExpandableRecyclerViewAdapter extends RecyclerView.Adapter<Expandab
         //инициализация адаптера типа InnerRecyclerViewAdapter
         InnerRecyclerViewAdapter itemInnerRecyclerView = new InnerRecyclerViewAdapter(itemsList.get(position).getItem(), context);
 
-        //устанавливает рец.вью innerRecyclerView табличный лэйаут
         holder.cardRecyclerView.setLayoutManager(new GridLayoutManager(context, 2));
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
